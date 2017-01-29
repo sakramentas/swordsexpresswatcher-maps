@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/swordstimetable" version="1.0.0" height="100" width="100" viewmodes="fullscreen">
+    <tizen:application id="t8Lz2WZjvz.swordstimetable" package="t8Lz2WZjvz" required_version="2.3.1"/>
+    <author email="lucas.arki@gmail.com">Lucas Sacramento</author>
+    <content src="index.html"/>
+    <description xml:lang="en-ie">Swords Express Widget</description>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <feature name="http://tizen.org/feature/screen.size.normal.320.320"/>
+    <icon src="icon.png" height="6" width="7"/>
+    <tizen:metadata key="WearableAppType" value="Linked"/>
+    <tizen:metadata key="WearableAppLocation" value="res/Swordsexpress.wgt"/>
+    <name xml:lang="en-ie">Swords Express New</name>
+    <name>swordstimetablenew</name>
+    <tizen:privilege name="http://tizen.org/privilege/notification"/>
+    <tizen:profile name="wearable"/>
+    <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
+</widget>
