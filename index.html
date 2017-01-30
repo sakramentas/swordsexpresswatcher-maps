@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Tizen Wearable Web Basic Template" />
+
+    <title>Tizen Wearable Web Basic Application</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry&sensor=false"></script>
+    <script src="js/main.js"></script>
+    <script src="js/app-map.js"></script>
+</head>
+
+<body>
+	<!-- Time -->
+    <div id="main" class="ui-page">
+        <div class="contents">
+	        <img src="se-logo.png" alt="" style="width: 59%; margin-top: 11px;" />
+	        <div id="time-container">
+	        <div id="boroimhetocity">
+	        <h2>Boroimhe</h4>
+		        <h4>Next bus</h4>
+		        <span id="content-text-boroimhe"></span>
+	        </div>
+	        <div id="citytoboroimhe" style="display:none;">
+	        <h2>City Centre</h4>
+		        <h4>Next bus</h4>
+		        <span id="content-text-city"></span>
+	        </div>
+		    
+	        </div>
+	        <h2><a href="#" id="show-map">Live Map</a></h2>
+        </div>
+    </div>
+    
+    <!-- Map -->
+    <div id="map" class="ui-page" style="display:none;">
+    <p id="timer"></p>
+    	<div id="back-btn"></div>
+        <div id="map_canvas" style="width:100%; height:100%!important;position:absolute; top:0; left:0;"></div>
+    </div>
+    <script type="text/javascript">
+	    initialize();
+	</script>
+</body>
+
+</html>
