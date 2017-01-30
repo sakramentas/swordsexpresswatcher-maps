@@ -15,6 +15,7 @@ window.onload = function() {
 		for(i=0;i<timetable.length;i++){
 			timesstring = String(timetable).replace(/:/g,'');
 			times = timesstring.split(',').map(Number);
+<<<<<<< HEAD
 			newar.push(actualTime-times[i]); //newar.push(math.abs(actualTime-times[i])) for buses before the time;
 		}
 
@@ -49,6 +50,34 @@ console.log(newar);
 //		$('#boroimhetocity').css('display','block');
 //		$('#content-text-boroimhe').text(calcTime(timesboroimhe));
 //	})
+=======
+			
+			newar.push(actualTime-times[i]); //newar.push(math.abs(actualTime-times[i])) for buses before the time;
+			
+		}
+
+		var i = newar.indexOf(Math.min.apply(Math, newar));
+		var closestTime = times[i];
+		var closestTimeString = String(closestTime);
+		closestTimeString = closestTimeString.substring(0,2) + ':' + closestTimeString.substring(2);
+		return closestTimeString;
+	}
+	
+	console.log(calcTime(timescity));
+	$('#time-container').find('#content-text-boroimhe').text(calcTime(timesboroimhe));
+	
+	$('#boroimhetocity').click(function () {
+		$('#boroimhetocity').css('display','none');
+		$('#citytoboroimhe').css('display','block');
+		$('#content-text-city').text(calcTime(timescity));
+	})
+	
+	$('#citytoboroimhe').click(function () {
+		$('#citytoboroimhe').css('display','none');
+		$('#boroimhetocity').css('display','block');
+		$('#content-text-boroimhe').text(calcTime(timesboroimhe));
+	})
+>>>>>>> 65f132480ef5bd616c3a3a2f8020c6677cc27003
 	
 
 	

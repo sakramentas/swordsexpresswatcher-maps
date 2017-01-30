@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/TimetableSwords" version="1.0.0" viewmodes="maximized">
     <tizen:application id="Uerj3vAlbP.TimetableSwords" package="Uerj3vAlbP" required_version="2.3.1"/>
     <access origin="*" subdomains="true"></access>
@@ -9,4 +10,21 @@
      <tizen:privilege name="http://tizen.org/privilege/internet"/>
     <tizen:privilege name="http://tizen.org/privilege/location"/>
     <tizen:profile name="wearable"/>
+=======
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/swordstimetable" version="1.0.0" height="100" width="100" viewmodes="fullscreen">
+    <tizen:application id="t8Lz2WZjvz.swordstimetable" package="t8Lz2WZjvz" required_version="2.3.1"/>
+    <author email="lucas.arki@gmail.com">Lucas Sacramento</author>
+    <content src="index.html"/>
+    <description xml:lang="en-ie">Swords Express Widget</description>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <feature name="http://tizen.org/feature/screen.size.normal.320.320"/>
+    <icon src="icon.png" height="6" width="7"/>
+    <tizen:metadata key="WearableAppType" value="Linked"/>
+    <tizen:metadata key="WearableAppLocation" value="res/Swordsexpress.wgt"/>
+    <name xml:lang="en-ie">Swords Express New</name>
+    <name>swordstimetablenew</name>
+    <tizen:privilege name="http://tizen.org/privilege/notification"/>
+    <tizen:profile name="wearable"/>
+    <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
+>>>>>>> 65f132480ef5bd616c3a3a2f8020c6677cc27003
 </widget>
